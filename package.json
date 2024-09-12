@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+
+    "postbuild": "cd .output/server && npm i",
+    "preview-emulator": "firebase emulators:start --only hosting,functions",
+    "deploy-website": "firebase deploy --only hosting:nuxtimgfb,functions:nuxtImgFbServer"
+  },
+  "dependencies": {
+    "@nuxt/image": "^1.8.0",
+    "nuxt": "^3.13.0",
+    "vue": "latest",
+    "vue-router": "latest"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "functions": {
+    "source": ".output/server",
+    "runtime": "nodejs20"
+  },
+  "hosting": {
+    "target": "nuxtimgfb",
+    "public": ".output/public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "rewrites": [{
+      "source": "**",
+      "function": "nuxtImgFbServer",
+      "region": "europe-west1"
+    }]
+  }
+}

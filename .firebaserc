@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "test": "smartrails-test"
+  },
+  "targets": {
+    "smartrails-test": {
+      "hosting": {
+        "nuxtimgfb": [
+          "smartrails-test-nuxtimgfb"
+        ]
+      }
+    }
+  }
+}
